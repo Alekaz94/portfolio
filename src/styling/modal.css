@@ -1,0 +1,165 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #ffffff;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    max-width: 640px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.25s ease;
+}
+
+.modal-content section {
+    margin-bottom: 1.25rem;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    animation: sectionFade 0.3s ease forwards;
+}
+
+.frontend-hero {
+    width: 400%;
+    height: 250px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-screenshot {
+    width: 100%;
+    height: 250px;
+    border-radius: 0.5rem;
+    object-fit: contain;
+    animation: slideScreens 12s infinite;
+}
+
+.close-btn {
+    align-self: flex-end;
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.close-btn:hover {
+    background-color: #1669c1;
+    transform: translateY(-1px);
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+    color: #1a202c;
+}
+
+.modal-content h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.modal-content h3::before {
+    content: "";
+    position: absolute;
+    left: -0.75rem;
+    top: 0.2rem;
+    height: 0.9rem;
+    width: 3px;
+    background: #1a73e8;
+    border-radius: 2px;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.modal-content li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.4rem;
+}
+
+.modal-content li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+.modal-body {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.modal-content section {
+    margin-bottom: 1.5rem;
+}
+
+.modal-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    color: #1a202c;
+}
+
+.modal-content p,
+.modal-content li {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+@keyframes sectionFade {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideScreens {
+    0%, 20% { transform: translateX(0%); }
+    25%, 45% { transform: translateX(-100%); }
+    50%, 70% { transform: translateX(-200%); }
+    75%, 95% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
