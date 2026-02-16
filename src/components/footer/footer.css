@@ -1,0 +1,25 @@
+.footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity 0.2s ease, text-decoration-color 0.2s ease;
+}
+  
+.footer a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer a::after {
+    font-size: 0.8em;
+    opacity: 0.6;
+}
