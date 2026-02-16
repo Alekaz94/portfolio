@@ -25,7 +25,7 @@ const Navbar = () => {
                     <li><a href="#about" onClick={closeMenu}>About</a></li>
                     <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
                     <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
-                    <li><a href="/resume.pdf" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Resume</a></li>
+                    <li><a href="/alexandros_kazalis_resume.pdf" target="_blank" rel="noopener noreferrer" className="download-resume" download>Resume</a></li>
                 </ul>
             </div>
 
