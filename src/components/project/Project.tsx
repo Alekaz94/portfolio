@@ -52,7 +52,7 @@ const Projects = () => {
                             <section>
                                 <h3>Overview</h3>
                                 <p>
-                                    A React Native mobile app providing daily saints, prayers, and personal journaling. 
+                                    A React Native mobile app providing saints of the catholic church, common prayers, and personal journaling. 
                                     Built for responsive design and smooth UX.
                                 </p>
                             </section>
@@ -74,8 +74,8 @@ const Projects = () => {
 
                             <section>
                                 <h3>Outcome</h3>
-                                <p>This project strengthened my skills in mobile development, responsive design, and state management in React Native. I gained hands-on experience integrating dynamic content that updates daily for users, as well as Google authentication using Firebase.</p>
-                                <p>Working on this app gave me practical insights into delivering a production-ready mobile application.</p>
+                                <p>This project strengthened my skills in mobile development, responsive design, and state management in React Native. I gained hands on experience integrating dynamic content that updates daily for users, as well as Google authentication using Firebase.</p>
+                                <p>Working on this app gave me practical insights into delivering a production ready mobile application.</p>
                             </section>
                         </>
                     )}
@@ -101,7 +101,7 @@ const Projects = () => {
                                     <li>Firebase authentication for Google Sign-In</li>
                                     <li>Backend verification of Firebase ID tokens</li>
                                     <li>JWT access tokens for API authorization</li>
-                                    <li>Server-managed refresh tokens for session continuity</li>
+                                    <li>Servermanaged refresh tokens for session continuity</li>
                                 </ul>
                             </section>
                             
@@ -128,7 +128,7 @@ const Projects = () => {
                                 <h3>Next Improvements</h3>
                                 <ul>
                                     <li>Refresh token rotation and hashing</li>
-                                    <li>Expanded authentication edge-case testing</li>
+                                    <li>Expanded authentication edge case testing</li>
                                 </ul>
                             </section>
                         </>
