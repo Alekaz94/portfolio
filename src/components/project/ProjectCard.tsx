@@ -14,7 +14,7 @@ type Props = {
 const ProjectCard = ({ title, description, tech, image, repoLink, liveLink, highlight, caseStudyLink }: Props) => {
 
     return (
-        <section className="project-card">
+        <article className="project-card">
             {image && (
                 <img src={image} alt={title} className="project-card-image" />
             )}            
@@ -53,7 +53,7 @@ const ProjectCard = ({ title, description, tech, image, repoLink, liveLink, high
                     )}
                 </div>
             </div>
-        </section>
+        </article>
     );
 }
 

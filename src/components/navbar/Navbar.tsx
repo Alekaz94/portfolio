@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <a href="#" className="logo" onClick={closeMenu}>Alexandros Kazalis</a>
+            <a href="#about" className="logo" onClick={closeMenu}>Alexandros Kazalis</a>
 
             <div className={`nav-links-container ${isOpen ? "open" : ""}`}>
                 <button className="close-drawer" onClick={closeMenu} aria-label="Close menu">
@@ -29,7 +29,7 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
+            <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu" aria-expanded={isOpen}>
                 <span className="bar"/>
                 <span className="bar"/>
                 <span className="bar"/>

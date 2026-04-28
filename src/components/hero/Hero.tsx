@@ -17,21 +17,20 @@ const Hero = () => {
                     <p className='subtitle'>Fullstack Developer</p>
 
                     <p className="description">
-                        Hello, I am Alexandros, a fullstack developer specializing in Java and Spring Boot, with experience building modern frontends using React and React Native.
+                        I am fullstack developer specializing in Java and Spring Boot, with experience building modern frontends using React and React Native.
                         <br /><br />
                         I enjoy turning complex problems into simple, well structured solutions, with a strong focus on backend development, RESTful APIs, and clean application architecture.
                         <br /><br />
-                        As a recent graduate, I am actively seeking a junior fullstack role where I can learn from experienced developers, grow within a team, and contribute to real world applications.
-                        Outside of coding, I enjoy spending time with my family and continuously improving my projects and technical skills.
+                        Currently seeking a junior backend, frontend or fullstack role where I can contribute,
+                        learn from experienced developers, and grow in a strong team environment.                    
                     </p>
-                    
                     <p className="stack">
-                        Core focus: Java · Spring Boot · REST APIs · PostgreSQL · React · React Native
+                        Java · Spring Boot · REST APIs · PostgreSQL · React · React Native
                     </p>
 
                     <div className="actions">
                         <a href="#projects" className="btn cta">
-                            View Projects
+                            View My Work
                         </a>
                         <a href="/alexandros_kazalis_resume.pdf" className="btn cta-outline" target="_blank" rel="noopener noreferrer" download>
                             <FaDownload /> Download CV
