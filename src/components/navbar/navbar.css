@@ -41,10 +41,12 @@
     color: #1a202c;
     font-weight: 500;
     transition: all 0.2s ease;
+    border-bottom: solid 2px #1a202c;
 }
 
 .nav-links li a:hover {
     color: #1a73e8;
+    border-bottom: solid 2px #1a73e8;
 }
 
 .nav-links li a:active {
