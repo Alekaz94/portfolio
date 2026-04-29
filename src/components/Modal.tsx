@@ -13,8 +13,11 @@ const Modal = ({ isOpen, onClose, title, content } : Props) => {
     }
 
     return (
-        <div className="modal-overlay">
-            <div className="modal-content">
+        <div className="modal-overlay" onClick={onClose}>
+            <div 
+                className="modal-content"
+                onClick={(e) => e.stopPropagation()}
+            >
                 <h2>{title}</h2>
                 <div className="modal-body">{content}</div>
                 <button className="close-btn" onClick={onClose}>Close</button>

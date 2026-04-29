@@ -1,7 +1,7 @@
 .contact-section {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem 1rem;
     background-color: #f7f9fc;
     align-items: center;
 }

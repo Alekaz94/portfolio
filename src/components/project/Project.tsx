@@ -43,10 +43,12 @@ const Projects = () => {
                     caseStudyLink={() => openModal("Catholic Daily Companion – Frontend Case Study", 
                         <>
                             <div className="frontend-hero">
-                                <img src="/app_1.jpg" alt="App 1" className="app-screenshot"/>
-                                <img src="/app_2.jpg" alt="App 2" className="app-screenshot"/>
-                                <img src="/app_4.jpg" alt="App 3" className="app-screenshot"/>
-                                <img src="/app_5.jpg" alt="App 3" className="app-screenshot"/>
+                                <div className="slider">
+                                    <img src="/app_1.jpg" alt="App 1" className="app-screenshot"/>
+                                    <img src="/app_2.jpg" alt="App 2" className="app-screenshot"/>
+                                    <img src="/app_4.jpg" alt="App 3" className="app-screenshot"/>
+                                    <img src="/app_5.jpg" alt="App 3" className="app-screenshot"/>
+                                </div>
                             </div>
 
                             <section>
