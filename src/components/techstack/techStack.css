@@ -1,0 +1,162 @@
+.skill-section {
+    padding: 6rem 2rem;
+    background: #111827;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-section::before {
+    content: "";
+    position: absolute;
+    top: -200px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background:
+        radial-gradient(circle,
+        rgba(56,189,248,0.08),
+        transparent 70%);
+    pointer-events: none;
+}
+
+.skill-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #f8fafc;
+    letter-spacing: -0.03em;
+}
+
+.skill-heading::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 12px auto 0;
+    background: #38bdf8;
+    border-radius: 2px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    line-height: 1.6;
+}
+
+.skill-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(56, 189, 248, 0.4);
+    box-shadow: 
+        0 15px 40px rgba(0,0,0,0.35),
+        0 0 25px rgba(56,189,248,0.12);
+}
+
+.skill-card h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    color: #f8fafc;
+}
+
+.tech-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-item {
+    background: rgba(255,255,255,0.03);
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    color: #f8fafc;
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.tech-item:hover {
+    background: rgba(56,189,248,0.08);
+    transform: translateY(-2px);
+    border-color: rgba(56,189,248,0.3);
+    box-shadow:
+        0 0 12px rgba(56,189,248,0.08);
+}
+
+.icon {
+    font-size: 1.6rem;
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.08));
+}
+
+.java {
+    color: #f89820;
+    filter: drop-shadow(0 0 6px rgba(248,152,32,0.25));
+}
+
+.spring {
+    color: #6db33f;
+}
+
+.react,
+.react-native {
+    color: #61dafb;
+}
+
+.js {
+    color: #facc15;
+}
+
+.ts {
+    color: #3178c6;
+}
+
+.css {
+    color: #3b82f6;
+}
+
+.html {
+    color: #e34c26;
+}
+
+.postgres {
+    color: #336791;
+}
+
+.mysql {
+    color: #00758f;
+}
+
+.git {
+    color: #f1502f;
+}
+
+.github {
+    color: white;
+}
+
+.docker {
+    color: #2496ed;
+}
+
