@@ -27,7 +27,7 @@ const Navbar = () => {
                         <li><a href="#tech" onClick={closeMenu}>Tech Stack</a></li>
                         <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
                         <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
-                        <li><a href="/alexandros_kazalis_resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn" download>Resume</a></li>
+                        <li><a href="/alexandros_kazalis_resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn" download>Download CV</a></li>
                     </ul>
                 </div>
 

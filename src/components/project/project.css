@@ -1,20 +1,21 @@
 .project-section {
     padding: 6rem 2rem;
     overflow: hidden;
-    background: #0f172a;
+    background: var(--bg-primary);
     border-top: 1px solid rgba(255,255,255,0.04);
 }
 
 .project-section::before {
     content: "";
     position: absolute;
-    bottom: -200px;
-    left: -100px;
-    width: 450px;
-    height: 450px;
-    background: 
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    background:
         radial-gradient(circle,
-        rgba(56,189,248,0.08)
+        rgba(56,189,248,0.08),
         transparent 70%);
     pointer-events: none;
 }
@@ -23,7 +24,7 @@
     text-align: center;
     margin-bottom: 3rem;
     font-size: 2.5rem;
-    color: #f8fafc;
+    color: var(--text-primary);
     letter-spacing: -0.03em;
 }
 
@@ -33,7 +34,7 @@
     width: 60px;
     height: 3px;
     margin: 12px auto 0;
-    background: #38bdf8;
+    background: var(--accent);
     border-radius: 2px;
 }
 
@@ -48,7 +49,7 @@
 .project-highlight {
     display: inline-block;
     background: rgba(56,189,248,0.18);
-    color: #38bdf8;
+    color: var(--accent);
     text-align: center;
     padding: 0.25rem 0.6rem;
     border-radius: 999px;

@@ -1,7 +1,7 @@
 .project-card {
-    background-color: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 24px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
     overflow: hidden;
     backdrop-filter: blur(12px);
     transition: 
@@ -43,12 +43,12 @@
 
 .project-card-title {
     font-size: 1.5rem;
-    color: #f8fafc;
+    color: var(--text-primary);
     letter-spacing: -0.03em;
 }
 
 .project-card-description {
-    color: #94a3b8;
+    color: var(--text-secondary);
     line-height: 1.7;
     font-size: 1rem;
 }
@@ -66,7 +66,7 @@
 
 .tech-badge {
     background: rgba(56,189,248,0.08);
-    color: #38bdf8;
+    color: var(--accent);
     border: 1px solid rgba(56,189,248,0.18);
     border-radius: 999px;
     padding: 0.35rem 0.7rem;
@@ -83,52 +83,12 @@
 
 .project-actions {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.75rem;
     margin-top: auto;
-    justify-content: flex-start;
 }
 
-.google-play {
-    background-color: #38bdf8;
-    color: #0f172a;
-    border: none;
-    font-weight: 700;
-    transition: all 0.25s ease;
-    text-align: center;
-}
-
-.google-play:hover {
-    background: #0ea5e9;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(56,189,248,0.2);
-}
-
-.case-study{
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.08);
-    color: #f8fafc;
-    transition: all 0.25s ease;
-}
-
-.case-study:hover {
-    background: rgba(255,255,255,0.06);
-    border-color: rgba(56,189,248,0.25);
-    color: #38bdf8;
-    cursor: pointer;
-    transform: translateY(-2px);
-}
-
-.case-study:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.4);
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.5rem;
-    white-space: wrap;
+.project-actions .btn {
+    flex: 1;
+    min-width: 140px;
 }

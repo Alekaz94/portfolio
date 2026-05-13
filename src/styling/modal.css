@@ -71,8 +71,8 @@
 
 .close-btn {
     align-self: flex-end;
-    background: #38bdf8;
-    color: #0f172a;
+    background: var(--accent);
+    color: var(--bg-primary);
     border: none;
     border-radius: 12px;
     padding: 0.7rem 1.4rem;
@@ -82,7 +82,7 @@
 }
 
 .close-btn:hover {
-    background: #0ea5e9;
+    background: var(--accent-hover);
     transform: translateY(-2px);
     box-shadow:
         0 10px 20px rgba(56,189,248,0.18);
@@ -90,7 +90,7 @@
 
 .modal-content h2 {
     margin-bottom: 1.5rem;
-    color: #f8fafc;
+    color: var(--text-primary);
     text-align: center;
     font-size: 2.5rem;
     letter-spacing: -0.03;
@@ -103,15 +103,15 @@
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #38bdf8;
+    color: var(--accent);
     margin-bottom: 0.8rem;
 }
 
 .modal-body,
 .modal-content p,
 .modal-content li {
-    color: #94a3b8;
-    line-height: 1.8em;
+    color: var(--text-secondary);
+    line-height: 1.8;
 }
 
 .modal-content ul {
@@ -130,7 +130,7 @@
     content: "•";
     position: absolute;
     left: 0;
-    color: #38bdf8;
+    color: var(--accent);
     font-weight: bold;
 }
 

@@ -1,44 +1,93 @@
 .contact-section {
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
-    background-color: #f7f9fc;
     align-items: center;
+    padding: 6rem 2rem;
+    background-color: var(--bg-secondary);
+    border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    background:
+        radial-gradient(circle,
+        rgba(56,189,248,0.08),
+        transparent 70%);
+    pointer-events: none;
 }
 
 .contact-section .text {
     text-align: center;
     max-width: 700px;
-    margin: 0.5rem;
+    margin: 1rem 0;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.05rem;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-section .title {
     font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #1a202c;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+    color: var(--text-primary);
     text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-section .title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 12px auto 0;
+    background: var(--accent);
+    border-radius: 2px;
 }
 
 .contact-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .contact-button {
-    font-size: 1rem;
-    display: inline-block;
-    margin: 1rem;
-    padding: 0.6rem 1.2rem;
-    border-radius: 5px;
-    background-color: #0070f3;
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.5rem;
+    border-radius: 14px;
+    background: rgba(56,189,248,0.12);
+    border: 1px solid rgba(56,189,248,0.2);
+    color: var(--accent);
     text-decoration: none;
-    transition: all 0.2s ease;
+    font-weight: 600;
+    transition: 
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
 }
   
 .contact-button:hover {
-    background-color: #005bb5;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: rgba(56,189,248,0.18);
+    border-color: rgba(56,189,248,0.35);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(56,189,248,0.12);
 }

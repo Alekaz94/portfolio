@@ -1,6 +1,6 @@
 .skill-section {
     padding: 6rem 2rem;
-    background: #111827;
+    background: var(--bg-primary);
     border-top: 1px solid rgba(255,255,255,0.04);
     position: relative;
     overflow: hidden;
@@ -9,10 +9,11 @@
 .skill-section::before {
     content: "";
     position: absolute;
-    top: -200px;
-    right: -100px;
-    width: 400px;
-    height: 400px;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
     background:
         radial-gradient(circle,
         rgba(56,189,248,0.08),
@@ -24,7 +25,7 @@
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #f8fafc;
+    color: var(--text-primary);
     letter-spacing: -0.03em;
 }
 
@@ -34,7 +35,7 @@
     width: 60px;
     height: 3px;
     margin: 12px auto 0;
-    background: #38bdf8;
+    background: var(--accent);
     border-radius: 2px;
 }
 
@@ -73,7 +74,7 @@
 .skill-card h3 {
     margin-bottom: 1.5rem;
     font-size: 1.4rem;
-    color: #f8fafc;
+    color: var(--text-primary);
 }
 
 .tech-items {
@@ -91,7 +92,7 @@
     align-items: center;
     gap: 0.4rem;
     font-size: 0.9rem;
-    color: #f8fafc;
+    color: var(--text-primary);
     transition:
         background 0.25s ease,
         transform 0.25s ease;

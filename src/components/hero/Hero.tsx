@@ -29,10 +29,10 @@ const Hero = () => {
                     </p>
 
                     <div className="actions">
-                        <a href="#projects" className="btn cta">
+                        <a href="#projects" className="btn btn-primary">
                             View My Work
                         </a>
-                        <a href="/alexandros_kazalis_resume.pdf" className="btn cta-outline" target="_blank" rel="noopener noreferrer" download>
+                        <a href="/alexandros_kazalis_resume.pdf" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" download>
                             <FaDownload /> Download CV
                         </a>
                     </div>

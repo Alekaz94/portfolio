@@ -39,17 +39,17 @@ const ProjectCard = ({ title, description, tech, image, repoLink, liveLink, high
 
                 <div className="project-actions">
                     {liveLink && (
-                        <a href={liveLink} target="_blank" rel="noopener noreferrer" className="btn google-play">
+                        <a href={liveLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                             Google Play
                         </a>
                     )}
                     {repoLink && (
-                        <a href={repoLink} target="_blank" rel="noopener noreferrer" className="btn cta-outline">
+                        <a href={repoLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
                             Github
                         </a>
                     )}
                     {caseStudyLink && (
-                        <button onClick={caseStudyLink} className="btn cta-outline case-study">Case Study</button>
+                        <button onClick={caseStudyLink} className="btn btn-secondary">Case Study</button>
                     )}
                 </div>
             </div>

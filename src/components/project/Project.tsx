@@ -123,7 +123,8 @@ const Projects = () => {
                             <section>
                                 <h3>Outcome</h3>
                                 <p>
-                                    A stable, stateless backend supporting a live mobile application.                                </p>
+                                    A stable, stateless backend supporting a live mobile application.                                
+                                </p>
                             </section>
 
                             <section>
@@ -143,7 +144,15 @@ const Projects = () => {
                     tech={["React", "CSS", "Vite", "Git"]}
                     repoLink="https://github.com/Alekaz94/portfolio"
                     caseStudyLink={() => openModal("Portfolio Website Case Study", 
-                        "This portfolio showcases my work with a simple, clean, and modern design. It was built using React and styled with CSS. The challenge was to create a responsive and dynamic layout that highlights my projects effectively.")}            
+                        <>
+                            <section>
+                                <h3>Overview</h3>
+                                <p>
+                                    This portfolio showcases my work with a simple, clean, and modern design. It was built using React and styled with CSS. The challenge was to create a responsive and dynamic layout that highlights my projects effectively.
+                                </p>
+                            </section>
+                        </>
+                    )}            
                 />
             </div>
 
