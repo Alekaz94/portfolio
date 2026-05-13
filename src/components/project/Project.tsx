@@ -33,9 +33,9 @@ const Projects = () => {
 
             <div className="project-grid">
                 <ProjectCard 
-                    title="Catholic Daily Companion – Mobile App (Frontend)" 
+                    title="Catholic Daily Companion - React Native Frontend" 
                     highlight="Live production app published on Google Play"
-                    description="Production Android application built with React Native and Expo. Provides daily saints, common prayers, guided rosary prayers, and personal journaling, with a focus on clean UX and responsive mobile design."
+                    description="Production mobile application built with React Native and Expo, featuring daily saints, prayers, guided rosary sessions, and personal journaling with a focus on responsive UI and smooth user experience."
                     tech={["React Native", "Expo", "TypeScript", "Git"]}
                     image="/cdc.png"
                     repoLink="https://github.com/Alekaz94/catholic-daily-companion-frontend" 
@@ -54,8 +54,7 @@ const Projects = () => {
                             <section>
                                 <h3>Overview</h3>
                                 <p>
-                                    A React Native mobile app providing saints of the catholic church, common prayers, and personal journaling. 
-                                    Built for responsive design and smooth UX.
+                                    A production-ready React Native application designed to provide daily Catholic content, guided prayers, and personal journaling in a clean and accessible mobile experience.
                                 </p>
                             </section>
 
@@ -76,16 +75,15 @@ const Projects = () => {
 
                             <section>
                                 <h3>Outcome</h3>
-                                <p>This project strengthened my skills in mobile development, responsive design, and state management in React Native. I gained hands on experience integrating dynamic content that updates daily for users, as well as Google authentication using Firebase.</p>
-                                <p>Working on this app gave me practical insights into delivering a production ready mobile application.</p>
+                                <p>This project gave me hands-on experience building and maintaining a production mobile application, including authentication flows, state management, responsive UI design, and API integration.</p>
                             </section>
                         </>
                     )}
                     />
 
                 <ProjectCard 
-                    title="Catholic Daily Companion – Mobile App (Backend)" 
-                    description="RESTful backend built with Java and Spring Boot, responsible for handling Google authentication, data persistence with PostgreSQL and content delivery for a production mobile application."
+                    title="Catholic Daily Companion — Spring Boot Backend" 
+                    description="RESTful backend built with Java and Spring Boot, handling authentication, PostgreSQL data persistence, and API delivery for a production mobile application."
                     tech={["Java", "Spring Boot", "PostgreSQL", "REST API", "Git"]}
                     repoLink="https://github.com/Alekaz94/catholic-daily-companion" 
                     caseStudyLink={() => openModal("Catholic Daily Companion – Backend Case Study",
@@ -93,7 +91,7 @@ const Projects = () => {
                             <section>
                                 <h3>Overview</h3>
                                 <p>
-                                    Spring Boot backend powering a production mobile application, responsible for authentication, user management and API content delivery.
+                                    Spring Boot backend powering a production mobile application, responsible for authentication, user management, PostgreSQL persistence, and REST API delivery.
                                 </p>
                             </section>
 
@@ -103,7 +101,7 @@ const Projects = () => {
                                     <li>Firebase authentication for Google Sign-In</li>
                                     <li>Backend verification of Firebase ID tokens</li>
                                     <li>JWT access tokens for API authorization</li>
-                                    <li>Servermanaged refresh tokens for session continuity</li>
+                                    <li>Server-managed refresh token handling  for session continuity</li>
                                 </ul>
                             </section>
                             
@@ -123,7 +121,7 @@ const Projects = () => {
                             <section>
                                 <h3>Outcome</h3>
                                 <p>
-                                    A stable, stateless backend supporting a live mobile application.                                
+                                    A stable, stateless backend supporting a live production mobile application with secure authentication and scalable API architecture.                                
                                 </p>
                             </section>
 
@@ -140,7 +138,7 @@ const Projects = () => {
 
                 <ProjectCard
                     title="Portfolio Website"
-                    description="Personal portfolio built with React and styled with CSS showcasing my projects and skills."
+                    description="Responsive portfolio website built with React and TypeScript to showcase projects, technical skills, and case studies."
                     tech={["React", "CSS", "Vite", "Git"]}
                     repoLink="https://github.com/Alekaz94/portfolio"
                     caseStudyLink={() => openModal("Portfolio Website Case Study", 
@@ -148,7 +146,7 @@ const Projects = () => {
                             <section>
                                 <h3>Overview</h3>
                                 <p>
-                                    This portfolio showcases my work with a simple, clean, and modern design. It was built using React and styled with CSS. The challenge was to create a responsive and dynamic layout that highlights my projects effectively.
+                                    This portfolio was built to showcase my projects, technical skills, and development experience through a clean, responsive, and accessible interface.
                                 </p>
                             </section>
                         </>

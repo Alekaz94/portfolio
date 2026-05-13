@@ -14,18 +14,17 @@ const Hero = () => {
                 />
                 <div className="text">
                     <h1 className="title">Alexandros Kazalis</h1>
-                    <p className='subtitle'>Fullstack Developer</p>
+                    <p className='subtitle'>Junior Fullstack Developer · Java & Spring Boot</p>
 
                     <p className="description">
-                        I am fullstack developer specializing in Java and Spring Boot, with experience building modern frontends using React and React Native.
+                        Fullstack developer specializing in Java and Spring Boot, with experience building modern web and mobile applications using React and React Native.
                         <br /><br />
-                        I enjoy turning complex problems into simple, well structured solutions, with a strong focus on backend development, RESTful APIs, and clean application architecture.
+                        Passionate about backend development, RESTful APIs, and designing clean, maintainable application architectures.
                         <br /><br />
-                        Currently seeking a junior backend, frontend or fullstack role where I can contribute,
-                        learn from experienced developers, and grow in a strong team environment.                    
+                        Currently seeking a junior backend, frontend, or fullstack role where I can contribute to production systems, collaborate with experienced developers, and continue growing as an engineer.            
                     </p>
                     <p className="stack">
-                        Java · Spring Boot · REST APIs · PostgreSQL · React · React Native
+                        Java · Spring Boot · REST APIs · PostgreSQL · React · React Native · TypeScript
                     </p>
 
                     <div className="actions">
