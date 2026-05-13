@@ -39,13 +39,13 @@ const ProjectCard = ({ title, description, tech, image, repoLink, liveLink, high
 
                 <div className="project-actions">
                     {liveLink && (
-                        <a href={liveLink} target="_blank" rel="noopener noreferrer" className="btn cta google-play">
+                        <a href={liveLink} target="_blank" rel="noopener noreferrer" className="btn google-play">
                             Google Play
                         </a>
                     )}
                     {repoLink && (
                         <a href={repoLink} target="_blank" rel="noopener noreferrer" className="btn cta-outline">
-                            GitHub
+                            Github
                         </a>
                     )}
                     {caseStudyLink && (

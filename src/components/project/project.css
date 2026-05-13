@@ -1,12 +1,40 @@
 .project-section {
-    padding: 4rem 1rem;
+    padding: 6rem 2rem;
+    overflow: hidden;
+    background: #0f172a;
+    border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.project-section::before {
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    left: -100px;
+    width: 450px;
+    height: 450px;
+    background: 
+        radial-gradient(circle,
+        rgba(56,189,248,0.08)
+        transparent 70%);
+    pointer-events: none;
 }
 
 .project-heading {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-size: 2.5rem;
-    color: #1a202c;
+    color: #f8fafc;
+    letter-spacing: -0.03em;
+}
+
+.project-heading::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 12px auto 0;
+    background: #38bdf8;
+    border-radius: 2px;
 }
 
 .project-grid {
@@ -19,8 +47,8 @@
 
 .project-highlight {
     display: inline-block;
-    background: #e8f0fe;
-    color: #1a73e8;
+    background: rgba(56,189,248,0.18);
+    color: #38bdf8;
     text-align: center;
     padding: 0.25rem 0.6rem;
     border-radius: 999px;
