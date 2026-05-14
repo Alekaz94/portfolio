@@ -32,9 +32,12 @@ const Navbar = () => {
                 </div>
 
                 <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu" aria-expanded={isOpen}>
-                    <span className="bar"/>
-                    <span className="bar"/>
-                    <span className="bar"/>
+                    <div className="hamburger-icon">                        
+                        <span className="bar"/>
+                        <span className="bar"/>
+                        <span className="bar"/>
+                    </div>
+                    <span className="menu-text">Menu</span>
                 </button>
             </div>
         </nav>
