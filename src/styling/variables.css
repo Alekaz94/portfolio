@@ -6,7 +6,7 @@
     --text-secondary: #a8b3c7;
     --accent: #38bdf8;
     --accent-hover: #0ea5e9;
-    --border: rgba(255,255,255,0.10);
+    --border: rgba(255,255,255,0.18);
     --shadow-lg: 0 20px 40px rgba(0,0,0,0.35);
     --radius-lg: 24px;
 }

@@ -1,4 +1,5 @@
 import "./projectCard.css"
+import { FiExternalLink } from "react-icons/fi";
 
 type Props = {
     title: string;
@@ -40,12 +41,12 @@ const ProjectCard = ({ title, description, tech, image, repoLink, liveLink, high
                 <div className="project-actions">
                     {liveLink && (
                         <a href={liveLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                            Google Play
+                            Google Play <FiExternalLink />
                         </a>
                     )}
                     {repoLink && (
                         <a href={repoLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                            Github
+                            Github <FiExternalLink />
                         </a>
                     )}
                     {caseStudyLink && (
