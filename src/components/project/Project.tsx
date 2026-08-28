@@ -34,12 +34,10 @@ const Projects = () => {
             <div className="project-grid">
                 <ProjectCard 
                     title="Catholic Daily Companion - React Native Frontend" 
-                    highlight="Live production app published on Google Play"
                     description="Production mobile application built with React Native and Expo, featuring daily saints, prayers, guided rosary sessions, and personal journaling with a focus on responsive UI and smooth user experience."
                     tech={["React Native", "Expo", "TypeScript", "Git"]}
                     image="/cdc.png"
                     repoLink="https://github.com/Alekaz94/catholic-daily-companion-frontend" 
-                    liveLink="https://play.google.com/store/apps/details?id=com.alexandros.catholicdailycompanion&hl=sv"
                     caseStudyLink={() => openModal("Catholic Daily Companion – Frontend Case Study", 
                         <>
                             <div className="frontend-hero">
